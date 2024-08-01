@@ -1,0 +1,5358 @@
+{
+  "name": "X12_004010_310",
+  "tag": "X12_004010_310",
+  "delimiters": {
+    "segment": "~",
+    "field": "*",
+    "component": ":",
+    "subcomponent": "NOT_USED",
+    "repetition": "NOT_USED"
+  },
+  "ignoreSegments": [],
+  "preserveEmptyFields": true,
+  "includeSegmentCode": true,
+  "segments": [
+    {
+      "ref": "ISA_InterchangeControlHeader",
+      "minOccurances": 0,
+      "maxOccurances": 1
+    },
+    {
+      "tag": "X12_FunctionalGroup",
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "segments": [
+        {
+          "ref": "GS_FunctionalGroupHeader",
+          "minOccurances": 0,
+          "maxOccurances": 1
+        },
+        {
+          "tag": "X12_004010_310",
+          "minOccurances": 0,
+          "maxOccurances": 1,
+          "segments": [
+            {
+              "ref": "ST_TransactionSetHeader",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "B3_BeginningSegmentforCarriersInvoice",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "B2A_SetPurpose",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "Y6_Authentication",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "G3_CompensationInformation",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "N9_ReferenceIdentification",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "V1_VesselIdentification",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "M0_LetterofCreditReference",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "M1_Insurance",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "C2_BankID",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "C3_Currency",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "Y2_ContainerDetails",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "tag": "Loop_1_0130",
+              "minOccurances": 0,
+              "maxOccurances": 1,
+              "segments": [
+                {
+                  "ref": "N1_Name",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                },
+                {
+                  "ref": "N2_AdditionalNameInformation",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                },
+                {
+                  "ref": "N3_AddressInformation",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                },
+                {
+                  "ref": "N4_GeographicLocation",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                }
+              ]
+            },
+            {
+              "ref": "G61_Contact",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "tag": "Loop_1_0180",
+              "minOccurances": 0,
+              "maxOccurances": 1,
+              "segments": [
+                {
+                  "ref": "R4_PortorTerminal",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                },
+                {
+                  "ref": "DTM_DateTimeReference",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                }
+              ]
+            },
+            {
+              "ref": "R2A_RouteInformationwithPreference",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "R2_RouteInformation",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "K1_Remarks",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "H3_SpecialHandlingInstructions",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "L5_DescriptionMarksandNumbers",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "tag": "Loop_1_0240",
+              "minOccurances": 0,
+              "maxOccurances": 1,
+              "segments": [
+                {
+                  "ref": "C8_CertificationsandClauses",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                },
+                {
+                  "ref": "C8C_CertificationsClausesContinuation",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                }
+              ]
+            },
+            {
+              "tag": "Loop_2_0010",
+              "minOccurances": 0,
+              "maxOccurances": 1,
+              "segments": [
+                {
+                  "ref": "LX_AssignedNumber",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                },
+                {
+                  "tag": "Loop_2_0020",
+                  "minOccurances": 0,
+                  "maxOccurances": 1,
+                  "segments": [
+                    {
+                      "ref": "N7_EquipmentDetails",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "QTY_Quantity",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "V4_CargoLocationReference",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "N12_EquipmentEnvironment",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "M7_SealNumbers",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "W09_EquipmentandTemperature",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "tag": "Loop_2_0070",
+                      "minOccurances": 0,
+                      "maxOccurances": 1,
+                      "segments": [
+                        {
+                          "ref": "L1_RateandCharges",
+                          "minOccurances": 0,
+                          "maxOccurances": 1
+                        },
+                        {
+                          "ref": "C3_Currency",
+                          "minOccurances": 0,
+                          "maxOccurances": 1
+                        }
+                      ]
+                    },
+                    {
+                      "ref": "L7_TariffReference",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "X1_ExportLicense",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "X2_ImportLicense",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "N9_ReferenceIdentification",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "tag": "Loop_2_0130",
+                      "minOccurances": 0,
+                      "maxOccurances": 1,
+                      "segments": [
+                        {
+                          "ref": "H1_HazardousMaterial",
+                          "minOccurances": 0,
+                          "maxOccurances": 1
+                        },
+                        {
+                          "ref": "H2_AdditionalHazardousMaterialDescription",
+                          "minOccurances": 0,
+                          "maxOccurances": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "Loop_2_0150",
+                  "minOccurances": 0,
+                  "maxOccurances": 1,
+                  "segments": [
+                    {
+                      "ref": "L0_LineItem-QuantityandWeight",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "L5_DescriptionMarksandNumbers",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "tag": "Loop_2_0170",
+                      "minOccurances": 0,
+                      "maxOccurances": 1,
+                      "segments": [
+                        {
+                          "ref": "L1_RateandCharges",
+                          "minOccurances": 0,
+                          "maxOccurances": 1
+                        },
+                        {
+                          "ref": "C3_Currency",
+                          "minOccurances": 0,
+                          "maxOccurances": 1
+                        }
+                      ]
+                    },
+                    {
+                      "ref": "L7_TariffReference",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "X1_ExportLicense",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "ref": "X2_ImportLicense",
+                      "minOccurances": 0,
+                      "maxOccurances": 1
+                    },
+                    {
+                      "tag": "Loop_2_0220",
+                      "minOccurances": 0,
+                      "maxOccurances": 1,
+                      "segments": [
+                        {
+                          "ref": "C8_CertificationsandClauses",
+                          "minOccurances": 0,
+                          "maxOccurances": 1
+                        },
+                        {
+                          "ref": "C8C_CertificationsClausesContinuation",
+                          "minOccurances": 0,
+                          "maxOccurances": 1
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "Loop_2_0230",
+                      "minOccurances": 0,
+                      "maxOccurances": 1,
+                      "segments": [
+                        {
+                          "ref": "H1_HazardousMaterial",
+                          "minOccurances": 0,
+                          "maxOccurances": 1
+                        },
+                        {
+                          "ref": "H2_AdditionalHazardousMaterialDescription",
+                          "minOccurances": 0,
+                          "maxOccurances": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "ref": "L3_TotalWeightandCharges",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "PWK_Paperwork",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "tag": "Loop_3_0030",
+              "minOccurances": 0,
+              "maxOccurances": 1,
+              "segments": [
+                {
+                  "ref": "L1_RateandCharges",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                },
+                {
+                  "ref": "C3_Currency",
+                  "minOccurances": 0,
+                  "maxOccurances": 1
+                }
+              ]
+            },
+            {
+              "ref": "V9_EventDetail",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "C8_CertificationsandClauses",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "L11_BusinessInstructionsandReferenceNumber",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            },
+            {
+              "ref": "SE_TransactionSetTrailer",
+              "minOccurances": 0,
+              "maxOccurances": 1
+            }
+          ]
+        },
+        {
+          "ref": "GE_FunctionalGroupTrailer",
+          "minOccurances": 0,
+          "maxOccurances": 1
+        }
+      ]
+    },
+    {
+      "ref": "IEA_InterchangeControlTrailer",
+      "minOccurances": 0,
+      "maxOccurances": 1
+    }
+  ],
+  "segmentDefinitions": {
+    "ISA_InterchangeControlHeader": {
+      "code": "ISA",
+      "tag": "InterchangeControlHeader",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA01__AuthorizationInformationQualifier",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA02__AuthorizationInformation",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA03__SecurityInformationQualifier",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA04__SecurityInformation",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA05__InterchangeIDQualifier",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA06__InterchangeSenderID",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA07__InterchangeIDQualifier",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA08__InterchangeReceiverID",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA09__InterchangeDate",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA10__InterchangeTime",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA11__InterchangeControlStandardsIdentifier",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA12__InterchangeControlVersionNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA13__InterchangeControlNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA14__AcknowledgmentRequested",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA15__UsageIndicator",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ISA16__ComponentElementSeparator",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "GS_FunctionalGroupHeader": {
+      "code": "GS",
+      "tag": "FunctionalGroupHeader",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "GS01__FunctionalIdentifierCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "GS02__ApplicationSendersCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "GS03__ApplicationReceiversCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "GS04__Date",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "GS05__Time",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "GS06__GroupControlNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "GS07__ResponsibleAgencyCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "GS08__VersionReleaseIndustryIdentifierCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "ST_TransactionSetHeader": {
+      "code": "ST",
+      "tag": "TransactionSetHeader",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ST01__TransactionSetIdentifierCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "ST02__TransactionSetControlNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "B3_BeginningSegmentforCarriersInvoice": {
+      "code": "B3",
+      "tag": "BeginningSegmentforCarriersInvoice",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B301__ShipmentQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B302__InvoiceNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B303__ShipmentIdentificationNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B304__ShipmentMethodofPayment",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B305__WeightUnitCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B306__Date",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B307__NetAmountDue",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B308__CorrectionIndicator",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B309__DeliveryDate",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B310__DateTimeQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B311__StandardCarrierAlphaCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B312__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B313__TariffServiceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B314__TransportationTermsCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "B2A_SetPurpose": {
+      "code": "B2A",
+      "tag": "SetPurpose",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B2A01__TransactionSetPurposeCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "B2A02__ApplicationType",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "Y6_Authentication": {
+      "code": "Y6",
+      "tag": "Authentication",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y601__AuthorityIdentifierCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y602__Authority",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y603__AuthorizationDate",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "G3_CompensationInformation": {
+      "code": "G3",
+      "tag": "CompensationInformation",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G301__CompensationPaid",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G302__TotalCompensationAmount",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G303__Name",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G304__BusinessTransactionStatus",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G305__MonetaryAmount",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G306__CompensationQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "N9_ReferenceIdentification": {
+      "code": "N9",
+      "tag": "ReferenceIdentification",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N901__ReferenceIdentificationQualifier",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N902__ReferenceIdentification",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N903__Free_formDescription",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N904__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N905__Time",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N906__TimeCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N907_ReferenceIdentifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "composite",
+          "startIndex": -1,
+          "length": -1,
+          "components": [
+            {
+              "tag": "N907_01_ReferenceIdentificationQualifier",
+              "required": true,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N907_02_ReferenceIdentification",
+              "required": true,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N907_03_ReferenceIdentificationQualifier",
+              "required": true,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N907_04_ReferenceIdentification",
+              "required": true,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N907_05_ReferenceIdentificationQualifier",
+              "required": true,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N907_06_ReferenceIdentification",
+              "required": true,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            }
+          ]
+        }
+      ]
+    },
+    "V1_VesselIdentification": {
+      "code": "V1",
+      "tag": "VesselIdentification",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V101__VesselCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V102__VesselName",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V103__CountryCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V104__FlightVoyageNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V105__StandardCarrierAlphaCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V106__VesselRequirementCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V107__VesselTypeCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V108__VesselCodeQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V109__TransportationMethodTypeCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "M0_LetterofCreditReference": {
+      "code": "M0",
+      "tag": "LetterofCreditReference",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M001__LetterofCreditNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M002__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M003__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M004__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "M1_Insurance": {
+      "code": "M1",
+      "tag": "Insurance",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M101__CountryCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M102__CarriageValue",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M103__DeclaredValue",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M104__RateValueQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M105__EntityIdentifierCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M106__Free_FormMessage",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M107__RateValueQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M108__MonetaryAmount",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M109__PercentQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M110__Percent",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M111__PercentQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M112__Percent",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "C2_BankID": {
+      "code": "C2",
+      "tag": "BankID",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C201__BankClientCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C202__IdentificationCodeQualifier",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C203__IdentificationCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C204__ClientBankNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C205__BankAccountNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C206__PaymentMethodCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C207__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "C3_Currency": {
+      "code": "C3",
+      "tag": "Currency",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C301__CurrencyCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C302__ExchangeRate",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C303__CurrencyCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C304__CurrencyCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "Y2_ContainerDetails": {
+      "code": "Y2",
+      "tag": "ContainerDetails",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y201__NumberofContainers",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y202__ContainerTypeRequestCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y203__TypeofServiceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y204__EquipmentType",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y205__TransportationMethodTypeCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y206__IntermodalServiceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y207__StandardCarrierAlphaCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y208__ContainerTermsCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y209__ContainerTermsCodeQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "Y210__TotalStopoffs",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "N1_Name": {
+      "code": "N1",
+      "tag": "Name",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N101__EntityIdentifierCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N102__Name",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N103__IdentificationCodeQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N104__IdentificationCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N105__EntityRelationshipCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N106__EntityIdentifierCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "N2_AdditionalNameInformation": {
+      "code": "N2",
+      "tag": "AdditionalNameInformation",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N201__Name",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N202__Name",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "N3_AddressInformation": {
+      "code": "N3",
+      "tag": "AddressInformation",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N301__AddressInformation",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N302__AddressInformation",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "N4_GeographicLocation": {
+      "code": "N4",
+      "tag": "GeographicLocation",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N401__CityName",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N402__StateorProvinceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N403__PostalCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N404__CountryCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N405__LocationQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N406__LocationIdentifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "G61_Contact": {
+      "code": "G61",
+      "tag": "Contact",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G6101__ContactFunctionCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G6102__Name",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G6103__CommunicationNumberQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G6104__CommunicationNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "G6105__ContactInquiryReference",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "R4_PortorTerminal": {
+      "code": "R4",
+      "tag": "PortorTerminal",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R401__PortorTerminalFunctionCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R402__LocationQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R403__LocationIdentifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R404__PortName",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R405__CountryCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R406__TerminalName",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R407__PierNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R408__StateorProvinceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "DTM_DateTimeReference": {
+      "code": "DTM",
+      "tag": "DateTimeReference",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "DTM01__DateTimeQualifier",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "DTM02__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "DTM03__Time",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "DTM04__TimeCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "DTM05__DateTimePeriodFormatQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "DTM06__DateTimePeriod",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "R2A_RouteInformationwithPreference": {
+      "code": "R2A",
+      "tag": "RouteInformationwithPreference",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R2A01__RoutingSequenceCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R2A02__Preference",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R2A03__TransportationMethodTypeCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R2A04__StandardCarrierAlphaCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R2A05__LocationQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R2A06__LocationIdentifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R2A07__TypeofServiceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R2A08__RouteCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R2A09__RouteDescription",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R2A10__EntityIdentifierCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "R2_RouteInformation": {
+      "code": "R2",
+      "tag": "RouteInformation",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R201__StandardCarrierAlphaCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R202__RoutingSequenceCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R203__CityName",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R204__StandardPointLocationCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R205__IntermodalServiceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R206__TransportationMethodTypeCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R207__IntermediateSwitchCarrier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R208__IntermediateSwitchCarrier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R209__InvoiceNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R210__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R211__Free_formDescription",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R212__TypeofServiceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "R213__RouteDescription",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "K1_Remarks": {
+      "code": "K1",
+      "tag": "Remarks",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "K101__Free_FormMessage",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "K102__Free_FormMessage",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "H3_SpecialHandlingInstructions": {
+      "code": "H3",
+      "tag": "SpecialHandlingInstructions",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H301__SpecialHandlingCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H302__SpecialHandlingDescription",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H303__ProtectiveServiceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H304__VentInstructionCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H305__TariffApplicationCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "L5_DescriptionMarksandNumbers": {
+      "code": "L5",
+      "tag": "DescriptionMarksandNumbers",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L501__LadingLineItemNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L502__LadingDescription",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L503__CommodityCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L504__CommodityCodeQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L505__PackagingCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L506__MarksandNumbers",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L507__MarksandNumbersQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L508__CommodityCodeQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L509__CommodityCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L510__CompartmentIDCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "C8_CertificationsandClauses": {
+      "code": "C8",
+      "tag": "CertificationsandClauses",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C801__LadingLineItemNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C802__CertificationClauseCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C803__CertificationClauseText",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C804__ShippersExportDeclarationRequirements",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "C8C_CertificationsClausesContinuation": {
+      "code": "C8C",
+      "tag": "CertificationsClausesContinuation",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C8C01__CertificationClauseText",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C8C02__CertificationClauseText",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "C8C03__CertificationClauseText",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "LX_AssignedNumber": {
+      "code": "LX",
+      "tag": "AssignedNumber",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "LX01__AssignedNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "N7_EquipmentDetails": {
+      "code": "N7",
+      "tag": "EquipmentDetails",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N701__EquipmentInitial",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N702__EquipmentNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N703__Weight",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N704__WeightQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N705__TareWeight",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N706__WeightAllowance",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N707__Dunnage",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N708__Volume",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N709__VolumeUnitQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N710__OwnershipCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N711__EquipmentDescriptionCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N712__StandardCarrierAlphaCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N713__TemperatureControl",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N714__Position",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N715__EquipmentLength",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N716__TareQualifierCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N717__WeightUnitCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N718__EquipmentNumberCheckDigit",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N719__TypeofServiceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N720__Height",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N721__Width",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N722__EquipmentType",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N723__StandardCarrierAlphaCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N724__CarTypeCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "QTY_Quantity": {
+      "code": "QTY",
+      "tag": "Quantity",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "QTY01__QuantityQualifier",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "QTY02__Quantity",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "QTY03_CompositeUnitofMeasure",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "composite",
+          "startIndex": -1,
+          "length": -1,
+          "components": [
+            {
+              "tag": "QTY03_01_UnitorBasisforMeasurementCode",
+              "required": true,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_02_Exponent",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_03_Multiplier",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_04_UnitorBasisforMeasurementCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_05_Exponent",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_06_Multiplier",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_07_UnitorBasisforMeasurementCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_08_Exponent",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_09_Multiplier",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_10_UnitorBasisforMeasurementCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_11_Exponent",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_12_Multiplier",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_13_UnitorBasisforMeasurementCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_14_Exponent",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "QTY03_15_Multiplier",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            }
+          ]
+        },
+        {
+          "tag": "QTY04__Free_FormMessage",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "V4_CargoLocationReference": {
+      "code": "V4",
+      "tag": "CargoLocationReference",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V401__VesselStowageLocation",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "N12_EquipmentEnvironment": {
+      "code": "N12",
+      "tag": "EquipmentEnvironment",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N1201__FuelType",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "N1202_CompositeUnitofMeasure",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "composite",
+          "startIndex": -1,
+          "length": -1,
+          "components": [
+            {
+              "tag": "N1202_01_UnitorBasisforMeasurementCode",
+              "required": true,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_02_Exponent",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_03_Multiplier",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_04_UnitorBasisforMeasurementCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_05_Exponent",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_06_Multiplier",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_07_UnitorBasisforMeasurementCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_08_Exponent",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_09_Multiplier",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_10_UnitorBasisforMeasurementCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_11_Exponent",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_12_Multiplier",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_13_UnitorBasisforMeasurementCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_14_Exponent",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "N1202_15_Multiplier",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            }
+          ]
+        }
+      ]
+    },
+    "M7_SealNumbers": {
+      "code": "M7",
+      "tag": "SealNumbers",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M701__SealNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M702__SealNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M703__SealNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M704__SealNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "M705__EntityIdentifierCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "W09_EquipmentandTemperature": {
+      "code": "W09",
+      "tag": "EquipmentandTemperature",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "W0901__EquipmentDescriptionCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "W0902__Temperature",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "W0903__UnitorBasisforMeasurementCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "W0904__Temperature",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "W0905__UnitorBasisforMeasurementCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "W0906__FreeFormMessage",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "W0907__VentSettingCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "W0908__Percent",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "W0909__Quantity",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "L1_RateandCharges": {
+      "code": "L1",
+      "tag": "RateandCharges",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L101__LadingLineItemNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L102__FreightRate",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L103__RateValueQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L104__Charge",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L105__Advances",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L106__PrepaidAmount",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L107__RateCombinationPointCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L108__SpecialChargeorAllowanceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L109__RateClassCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L110__EntitlementCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L111__ChargeMethodofPayment",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L112__SpecialChargeDescription",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L113__TariffApplicationCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L114__DeclaredValue",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L115__RateValueQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L116__LadingLiabilityCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L117__BilledRated_asQuantity",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L118__BilledRated_asQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L119__Percent",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L120__CurrencyCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L121__Amount",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "L7_TariffReference": {
+      "code": "L7",
+      "tag": "TariffReference",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L701__LadingLineItemNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L702__TariffAgencyCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L703__TariffNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L704__TariffSection",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L705__TariffItemNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L706__TariffItemPart",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L707__FreightClassCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L708__TariffSupplementIdentifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L709__ExParte",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L710__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L711__RateBasisNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L712__TariffColumn",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L713__TariffDistance",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L714__DistanceQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L715__CityName",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L716__StateorProvinceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "X1_ExportLicense": {
+      "code": "X1",
+      "tag": "ExportLicense",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X101__LicensingAgencyCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X102__ExportLicenseNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X103__ExportLicenseStatusCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X104__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X105__ExportLicenseSymbolCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X106__ExportLicenseControlCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X107__CountryCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X108__ScheduleBCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X109__InternationalDomesticCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X110__LadingQuantity",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X111__LadingValue",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X112__ExportFilingKeyCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X113__UnitorBasisforMeasurementCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X114__UnitPrice",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X115__USGovernmentLicenseType",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X116__IdentificationCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "X2_ImportLicense": {
+      "code": "X2",
+      "tag": "ImportLicense",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X201__ImportLicenseNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X202__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X203__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X204__ImportLicenseNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X205__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "X206__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "H1_HazardousMaterial": {
+      "code": "H1",
+      "tag": "HazardousMaterial",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H101__HazardousMaterialCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H102__HazardousMaterialClassCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H103__HazardousMaterialCodeQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H104__HazardousMaterialDescription",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H105__HazardousMaterialContact",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H106__HazardousMaterialsPage",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H107__FlashpointTemperature",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H108__UnitorBasisforMeasurementCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H109__PackingGroupCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "H2_AdditionalHazardousMaterialDescription": {
+      "code": "H2",
+      "tag": "AdditionalHazardousMaterialDescription",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H201__HazardousMaterialDescription",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "H202__HazardousMaterialClassification",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "L0_LineItem-QuantityandWeight": {
+      "code": "L0",
+      "tag": "LineItem_QuantityandWeight",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L001__LadingLineItemNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L002__BilledRated_asQuantity",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L003__BilledRated_asQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L004__Weight",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L005__WeightQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L006__Volume",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L007__VolumeUnitQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L008__LadingQuantity",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L009__PackagingFormCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L010__DunnageDescription",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L011__WeightUnitCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L012__TypeofServiceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L013__Quantity",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L014__PackagingFormCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L015__YesNoConditionorResponseCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "L3_TotalWeightandCharges": {
+      "code": "L3",
+      "tag": "TotalWeightandCharges",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L301__Weight",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L302__WeightQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L303__FreightRate",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L304__RateValueQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L305__Charge",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L306__Advances",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L307__PrepaidAmount",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L308__SpecialChargeorAllowanceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L309__Volume",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L310__VolumeUnitQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L311__LadingQuantity",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L312__WeightUnitCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L313__TariffNumber",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L314__DeclaredValue",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L315__RateValueQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "PWK_Paperwork": {
+      "code": "PWK",
+      "tag": "Paperwork",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "PWK01__ReportTypeCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "PWK02__ReportTransmissionCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "PWK03__ReportCopiesNeeded",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "PWK04__EntityIdentifierCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "PWK05__IdentificationCodeQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "PWK06__IdentificationCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "PWK07__Description",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "PWK08_ActionsIndicated",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "composite",
+          "startIndex": -1,
+          "length": -1,
+          "components": [
+            {
+              "tag": "PWK08_01_PaperworkReportActionCode",
+              "required": true,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "PWK08_02_PaperworkReportActionCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "PWK08_03_PaperworkReportActionCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "PWK08_04_PaperworkReportActionCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            },
+            {
+              "tag": "PWK08_05_PaperworkReportActionCode",
+              "required": false,
+              "truncatable": true,
+              "dataType": "string",
+              "subcomponents": []
+            }
+          ]
+        },
+        {
+          "tag": "PWK09__RequestCategoryCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "V9_EventDetail": {
+      "code": "V9",
+      "tag": "EventDetail",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V901__EventCode",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V902__Event",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V903__Date",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V904__Time",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V905__CityName",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V906__StateorProvinceCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V907__CountryCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V908__StatusReasonCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V909__StandardPointLocationCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V910__Quantity",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V911__TrainDelayReasonCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V912__Free_FormMessage",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V913__TimeCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V914__Quantity",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V915__StandardPointLocationCode",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V916__TotalEquipment",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V917__TotalEquipment",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V918__TotalEquipment",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V919__Weight",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "V920__Length",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "L11_BusinessInstructionsandReferenceNumber": {
+      "code": "L11",
+      "tag": "BusinessInstructionsandReferenceNumber",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L1101__ReferenceIdentification",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L1102__ReferenceIdentificationQualifier",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "L1103__Description",
+          "repeat": false,
+          "required": false,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "SE_TransactionSetTrailer": {
+      "code": "SE",
+      "tag": "TransactionSetTrailer",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "SE01__NumberofIncludedSegments",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "SE02__TransactionSetControlNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "GE_FunctionalGroupTrailer": {
+      "code": "GE",
+      "tag": "FunctionalGroupTrailer",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "GE01__NumberofTransactionSetsIncluded",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "GE02__GroupControlNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    },
+    "IEA_InterchangeControlTrailer": {
+      "code": "IEA",
+      "tag": "InterchangeControlTrailer",
+      "truncatable": true,
+      "minOccurances": 0,
+      "maxOccurances": 1,
+      "fields": [
+        {
+          "tag": "code",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "string",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "IEA01__NumberofIncludedFunctionalGroups",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        },
+        {
+          "tag": "IEA02__InterchangeControlNumber",
+          "repeat": false,
+          "required": true,
+          "truncatable": true,
+          "dataType": "float",
+          "startIndex": -1,
+          "length": -1,
+          "components": []
+        }
+      ]
+    }
+  }
+}
